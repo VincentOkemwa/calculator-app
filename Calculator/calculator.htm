@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+
+	<div class="div-container">
+	<div class="calculator-container">
+		<div id="displayContainer">
+			<input type="text" id="inputField" />
+			<input type="text" id="displayResult" />
+		</div>
+		<input type="button"   value="7" class="numbers" data-element="7" onclick=" calculate(this)"  />
+		<input type="button"   value="8" class="numbers" data-element="8" onclick=" calculate(this)"  />
+		<input type="button"   value="9" class="numbers" data-element="9" onclick=" calculate(this)"  />
+		<input type="button"   value="*" class="numbers" data-element="*" onclick=" calculate(this)"  />
+		<input type="button"   value="4" class="numbers" data-element="4" onclick=" calculate(this)"  />
+		<input type="button"   value="5" class="numbers" data-element="5" onclick=" calculate(this)"  />
+		<input type="button"   value="6" class="numbers" data-element="6" onclick=" calculate(this)"  />
+		<input type="button"  value="-"  class="numbers" data-element="-" onclick=" calculate(this)"  />
+		<input type="button"  value="1" class="numbers"  data-element="1" onclick=" calculate(this)"  />
+		<input type="button"  value="2" class="numbers"  data-element="2" onclick=" calculate(this)"  />
+		<input type="button"  value="3" class="numbers"  data-element="3" onclick=" calculate(this)"  />
+		<input type="button"  value="+"  class="numbers" data-element="+" onclick=" calculate(this)"  />
+		<input type="button"  value="0"  class="numbers" data-element="0" onclick=" calculate(this)"  />
+		<input type="button"  value="."  class="numbers" data-element="." onclick=" calculate(this)"  />
+		<input type="button"  value="00"  class="numbers" data-element="00" onclick=" calculate(this)" />
+		<input type="button"  value="DEL" class="delete" onclick=" deleteLastElement()"  />
+		<input type="button"  value="/"  class="numbers" data-element="/" onclick=" calculate(this)"  />
+		<input type="button" value="AC"  class="clear" id="clear" />
+		<input type="button" value="="  class="numbers" id="equals" onclick=" giveResult()"  />
+		<a href="http://github.com/webdevvinny" target="_blank" > <button > @ vincent </button></a>
+	</div>
+	
+</div>
+	<script src="calculator.js"></script>
+</body>
+</html>
